@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Kiosk from "./pages/Kiosk";
 import Help from "./pages/Help";
+import PageNotFound from "./pages/PageNotFound"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/kiosk" element={<Kiosk/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/help" element={<Help/>}/>
+        <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </div>
   );

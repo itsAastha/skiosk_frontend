@@ -1,9 +1,9 @@
 const navigation = {
   main: [
-    { name: "Home", href: "#" },
-    { name: "Kiosk", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Help", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Kiosk", href: "/kiosk" },
+    { name: "About", href: "/about" },
+    { name: "Help", href: "/help" },
   ],
 
   social: [
@@ -23,7 +23,7 @@ const navigation = {
 
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/itsAastha/Skiosk",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -62,10 +62,10 @@ export default function Example() {
                 aria-label="Footer"
               >
                 {navigation.main.map((item) => (
-                  <div key={item.name} className="pb-6">
+                  <div key={item.name} className="pb-6 ">
                     <a
                       href={item.href}
-                      className="text-sm leading-6 text-gray-700 hover:text-gray-900"
+                      className="text-sm leading-6 text-gray-700"
                     >
                       {item.name}
                     </a>
