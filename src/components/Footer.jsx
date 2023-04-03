@@ -42,7 +42,7 @@ export default function Example() {
     <footer class="bg-neutral-100 text-center dark:bg-[#d7dad1] lg:text-left">
       <div class="container p-6 text-neutral-800 dark:text-neutral-700">
         <div class="grid gap-4 lg:grid-cols-2 py-20">
-          <div class="mb-6 md:mb-0">
+          <div class="mb-6 md:mb-0 px-20">
             <h5 class="mb-2 font-medium uppercase">Contact us</h5>
 
             <p class="mb-4">

@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./../images/logo.png";
+import { Link } from "react-router-dom";
+
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Kiosk", href: "#" },
-  { name: "About us", href: "#" },
-  { name: "Help", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Kiosk", href: "/kiosk" },
+  { name: "About us", href: "/about" },
+  { name: "Help", href: "/help" },
 ];
 
 export default function Hero() {
@@ -68,13 +70,11 @@ export default function Hero() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold  leading-6 text-gray-900 hover:text-[#5d5d46] hover:underline "
-              >
-                {item.name}
-              </a>
+              
+      
+                  <Link to={item.href}>{item.name}</Link>
+
+            
             ))}
           </div >
           <div className="hidden lg:flex lg:flex-1 lg:justify-end rounded-lg">
@@ -113,22 +113,14 @@ export default function Hero() {
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
-                    >
-                      {item.name}
-                    </a>
+                   
+                    <Link to={item.href}
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-400/10"
+                     
+                    >{item.name}</Link>
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-white hover:bg-gray-400/10"
-                  >
-                    Log in
-                  </a>
                 </div>
               </div>
             </div>
@@ -141,7 +133,7 @@ export default function Hero() {
                 DISCOVER YOUR SCHEME
               </h1>
             </h1>
-            <p className="mt-6 text-lg leading-10 text-gray-1000 font-semibold  bg-opacity-40 rounded-lg text-gray-900">
+            <p className="mt-6 text-lg leading-10 text-gray-900 font-semibold  bg-opacity-40 rounded-lg">
               Dedicated to providing villagers in India with detailed
               information about the various government schemes and programs that
               can help empower your village.
@@ -156,7 +148,7 @@ export default function Hero() {
               </a>
               <a
                 href="#"
-                className="text-base font-semibold leading-7 text-black hover:text-[#94a3b8]"
+                className="text-base font-semibold leading-7 text-[#d7dad1] hover:text-[#94a3b8]"
               >Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

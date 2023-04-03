@@ -1,24 +1,14 @@
-import { Outlet, Link } from "react-router-dom";
+import React from 'react'
+import Navbar from '../components/Navbar'
+import Blog from '../components/Blog'
 
-const Layout = () => {
+
+export const Kiosk = () => {
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-         
-            <Link to="/about">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/home">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Outlet />
-    </>
+    <div className="kiosk">
+      kiosk
+    </div>
   )
-};
+}
 
-export default Layout;
+export default Kiosk

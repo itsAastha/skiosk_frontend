@@ -1,16 +1,19 @@
+import { Routes, Route } from "react-router-dom";
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Cloud from "./components/Cloud"
-import Faq from "./components/Faq"
-import Footer from "./components/Footer"
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Kiosk from "./pages/Kiosk";
+import Help from "./pages/Help";
+
 function App() {
   return (
     <div className="App">
-      <Hero/>
-      <Cloud/>
-      <Faq/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/kiosk" element={<Kiosk/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/help" element={<Help/>}/>
+      </Routes>
     </div>
   );
 }

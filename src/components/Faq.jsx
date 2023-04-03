@@ -48,7 +48,7 @@ export default function Example() {
                     <>
                       <dt>
                         <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-300">
-                          <span className="text-base font-semibold leading-7">{faq.question}</span>
+                          <span className="text-base font-semibold leading-7 ">{faq.question}</span>
                           <span className="ml-6 flex h-7 items-center">
                             {open ? (
                               <PlusSmallIcon className="h-6 w-6" aria-hidden="true" />
@@ -59,7 +59,7 @@ export default function Example() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
+                        <p className="text-base leading-7 text-gray-300 py-5">{faq.answer}</p>
                       </Disclosure.Panel>
                     </>
                   )}
