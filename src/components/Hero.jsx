@@ -3,6 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./../images/logo.png";
 import { Link } from "react-router-dom";
+import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -48,10 +49,12 @@ export default function Hero() {
               <Link to={item.href} className="hover:text-[#d7dad1]">{item.name} </Link>
             ))}
           </div>
+          
+          
           <div className="hidden lg:flex lg:flex-1 lg:justify-end rounded-lg">
             <a href="#" className="text-sm font-semibold leading-6 text-black">
               <span aria-hidden="true">
-                <select className="rounded-lg border-transparent bg-[#9ca3af]">
+                <select className="rounded-lg border-transparent bg-neutral-300 bg-opacity-25">
                   <option>English</option>
                   <option>Kannada</option>
                   <option>Hindi</option>
@@ -59,6 +62,7 @@ export default function Hero() {
               </span>
             </a>
           </div>
+
         </nav>
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <Dialog.Panel
@@ -103,25 +107,47 @@ export default function Hero() {
                 DISCOVER YOUR SCHEME
               </h1>
             </h1>
-            <p className="mt-6 text-lg leading-10 text-gray-900 font-semibold  bg-opacity-40 rounded-lg">
+            <p className="mt-6 text-lg leading-10 text-neutral-800 font-semibold  bg-opacity-40 rounded-lg">
               Dedicated to providing villagers in India with detailed
               information about the various government schemes and programs that
               can help empower your village.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6 ">
+            <div className="hover:scale-110  ">
+              <label htmlFor="search" className="sr-only ">
+                Search
+              </label>
+              <div className="relative rounded-md shadow-sm">
+                <div
+                  className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 "
+                  aria-hidden="true"
+                >
+                  <MagnifyingGlassIcon className="mr-3 h-4 w-4 text-gray-500 " aria-hidden="true" />
+                </div>
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  className="block w-full rounded-md  bg-neutral-300 bg-opacity-60   pl-11 focus:border-neutral-300 focus:ring-[#51482c] sm:text-sm"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
               <a
                 href="/kiosk"
-                className="rounded-md bg-lime-950 px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-300 shadow-sm hover:bg-[#9d9d7e]  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 "
+                className="rounded-md bg-lime-950 px-3.5 py-1.5 text-base font-semibold leading-7 text-neutral-300 shadow-sm hover:bg-[#9d9d7e]  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 "
               >
                 <button className="btn relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"></button>
                 Browse government schemes
               </a>
+              
               <a
                 href="/about"
-                className="text-base font-semibold leading-7 text-[#d7dad1] hover:text-[#94a3b8]"
+                className="text-base font-semibold leading-7 text-[#d7dad1] hover:text-[#b1a8a3]"
               >
                 Learn more <span aria-hidden="true">→</span>
               </a>
+              
             </div>
           </div>
         </div>
