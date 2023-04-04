@@ -59,7 +59,7 @@ const About = () => {
         <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0  ">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20 ">
-            <h2 className="text-3xl font-bold tracking-tight text-transparent  bg-clip-text bg-gradient-to-r from-[#d7dad1] to-[#9d9d7e]">
+            <h2 className="text-3xl font-bold tracking-tight text-transparent border-b border-neutral-500 pb-4 bg-clip-text bg-gradient-to-r from-[#d7dad1] to-[#9d9d7e]">
             Discover Government Schemes That Can Empower Your Village
 
             </h2>

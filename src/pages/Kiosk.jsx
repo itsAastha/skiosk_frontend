@@ -9,6 +9,7 @@ export const Kiosk = () => {
   return (
     <div className="kiosk">
       <Categorycards/>
+      <Footer/>
     </div>
   )
 }

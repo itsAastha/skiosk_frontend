@@ -1,4 +1,4 @@
-import Footer from "../components/Footer"
+import Pagination from "./Pagination"
 
 const categories = [
     {
@@ -86,9 +86,9 @@ const categories = [
   
   export default function Example() {
     return (
-      <div className="bg-gradient-to-r from-[#565637] to-[#213124]  ">
+      <div className="bg-gradient-to-l from-[#565637] to-[#213124]  ">
         <div className=" py-16 px-4  sm:px-6 lg:max-w-8xl lg:px-5 pb-32 m-auto  ">
-          <h2 className=" text-4xl font-semibold text-gray-900 pb-7 text-transparent  bg-clip-text bg-neutral-300 px-10">Browse government schemes by Category</h2>
+          <h2 className=" text-4xl font-semibold text-gray-900 pb-7 text-transparent border-b border-neutral-600 bg-clip-text bg-neutral-300 px-10">Browse government schemes by Category</h2>
   
           <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 rounded-lg  bg-black bg-opacity-25 p-10 pb-10 shadow-lg">
             {categories.map((product) => (
@@ -123,9 +123,10 @@ const categories = [
                 </div>
               </div>
             ))}
-          </div>
+            
+          </div><Pagination/>
         </div>
-        <Footer/>
+       
       </div>
     )
   }

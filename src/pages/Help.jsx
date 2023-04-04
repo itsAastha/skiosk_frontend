@@ -6,8 +6,8 @@ export default function Help() {
   return (
     <div >
     <form className="space-y-6" action="#" method="POST">
-      <div className="bg-gradient-to-r from-[#565637] to-[#213124] px-4 py-20 shadow  ">
-        <div className="md:grid md:grid-cols-3 md:gap-6 ">
+      <div className="bg-gradient-to-r from-[#565637] to-[#213124] px-4 py-20 shadow min-h-screen  ">
+        <div className="md:grid md:grid-cols-3 md:gap-6 mr-10">
           <div className="md:col-span-1 relative px-20">
             <img className=" object-cover w-72" src={faqboy} alt="" />
           </div>
