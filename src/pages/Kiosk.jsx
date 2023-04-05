@@ -5,9 +5,11 @@ import Footer from '../components/Footer'
 import Categorycards from "../components/Categorycards"
 
 
+
 export const Kiosk = () => {
   return (
     <div className="kiosk">
+      <Navbar/>
       <Categorycards/>
       <Footer/>
     </div>

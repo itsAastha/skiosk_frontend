@@ -1,6 +1,7 @@
 import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
 import Footer from "../components/Footer";
 import Pagination from '../components/Pagination';
+import Navbar from '../components/Navbar';
 const posts = [
     {
       title: 'Rashtriya Krishi Vikas Yojana',
@@ -37,7 +38,8 @@ const posts = [
 export default function Example() {
   return (
     <div>
-        <div className="bg-neutral-100 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28 min-h-screen">
+        <Navbar/>
+        <div className="bg-neutral-100 px-6 pt-10 pb-20 lg:px-8  lg:pb-28 min-h-screen">
       <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">Agriculture</h2>
@@ -69,7 +71,7 @@ export default function Example() {
         <div className="mt-6 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12 pb-10 ">
           {posts.map((post) => (
             <div key={post.title}>
-                <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <a href="#" className="flex flex-col items-center hover:scale-110 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
                 <img className="object-cover w-full rounded-t-lg  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={post.img}></img>
                 <div className="flex flex-col justify-between p-4 leading-normal">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{post.title}</h5>
