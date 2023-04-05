@@ -112,9 +112,9 @@ export default function Hero() {
               information about the various government schemes and programs that
               can help empower your village.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6 ">
-              <div className="hover:scale-110  ">
-                <label htmlFor="search" className="sr-only  ">
+            <div className="mt-7 flex lg:flex-row flex-col items-center justify-center gap-x-6 ">
+              <div className="hover:scale-110 mt-3 ">
+                <label htmlFor="search" className="sr-only ">
                   Search
                 </label>
                 <div className="relative rounded-md shadow-sm">
@@ -138,7 +138,7 @@ export default function Hero() {
               </div>
               <a
                 href="/kiosk"
-                className="rounded-md bg-lime-950 px-3.5 py-1.5 text-base font-semibold leading-7 text-neutral-300 shadow-sm hover:bg-[#9d9d7e]  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 "
+                className="rounded-md mt-3 bg-lime-950 px-3.5  py-1.5 text-base font-semibold leading-7 text-neutral-300 shadow-sm hover:bg-[#9d9d7e]  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 "
               >
                 <button className="btn relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"></button>
                 Browse government schemes
@@ -146,7 +146,7 @@ export default function Hero() {
 
               <a
                 href="/about"
-                className="text-base font-semibold leading-7 text-[#d7dad1] hover:text-[#b1a8a3]"
+                className="text-base mt-3 font-semibold leading-7 text-[#d7dad1] hover:text-[#b1a8a3]"
               >
                 Learn more <span aria-hidden="true">→</span>
               </a>

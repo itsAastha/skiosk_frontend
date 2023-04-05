@@ -45,7 +45,7 @@ export default function Example() {
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">Agriculture</h2>
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:items-center lg:gap-5">
             <p className="text-xl text-gray-500">These schemes aim to promote agriculture, increase productivity, and provide financial and technical assistance to farmers.</p>
-            <form className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-end">
+            <form className="mt-6 flex flex-row sm:flex-row lg:mt-0 lg:justify-end">
               <div>
               <input
                   type="text"
@@ -55,10 +55,10 @@ export default function Example() {
                   placeholder="Search"
                 />
               </div>
-              <div className="mt-2 flex w-full flex-shrink-0 rounded-md shadow-sm sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto">
+              <div className=" px-2 flex flex-shrink-0 h-10 rounded-md  sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto">
                 <div
                   type="button"
-                  className="flex w-full items-center justify-center rounded-full border border-transparent bg-yellow-800 px-4 py-2 text-base font-medium text-white hover:bg-yellow-900 focus:outline-none focus:ring-2 focus:ring-[#51482c] focus:ring-offset-2 sm:inline-flex sm:w-auto "
+                  className="flex  items-center justify-center rounded-full border border-transparent bg-yellow-800 px-4 py-2 text-base font-medium text-white hover:bg-yellow-900 focus:outline-none focus:ring-2 focus:ring-[#51482c] focus:ring-offset-2 sm:inline-flex sm:w-auto "
                 >
                   <MagnifyingGlassIcon className=" h-4 w-4 text-gray-200 " aria-hidden="true" />
                
